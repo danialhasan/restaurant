@@ -1,0 +1,282 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+/*actual logo*/
+.logo a {
+	/*	colour is debatable. Might change.
+		#
+	*/
+	color: #ff0000;
+}
+
+#head {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("Assets/bread-color-cooking-1565982(1).jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+#ol {
+	list-style-type: none
+}
+
+#navbar {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	/*	Remove borders when finished developing.*/
+	/*	border: 1px solid red;*/
+	/*	opacity: 0.5;*/
+	/*	background-color: rgb(20, 20, 20);*/
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	/*	puts menuItems on right side of menu*/
+	justify-content: flex-end;
+	flex-grow: 1;
+	flex-shrink: 2;
+	z-index: 10;
+	color: rgb(240, 240, 240);
+	background-color: rgb(240, 240, 240);
+}
+
+#listContainer {
+	margin-right: 10%;
+}
+
+.menuItem {
+	/*	lets menuItems be side-by-side*/
+	display: inline-flex;
+	width: 150px;
+	height: 100%;
+	font-size: 20px;
+	/*	centers each menuItem inside itself*/
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 10px;
+	color: rgb(20, 20, 20);
+}
+
+.menuItem h2 {
+	font-size: 18px;
+}
+
+/*li of logo*/
+.logo {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 70px;
+	height: 50px;
+	top: 5px;
+	left: 10%;
+	font-size: 50px;
+	z-index: 0;
+}
+
+#burger {
+	position: absolute;
+	right: 0;
+	width: 50px;
+	height: 40px;
+	/*	this is a flex container, so the line-children can be managed easier.*/
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*	justify-content: space-between;*/
+	display: none;
+	z-index: 100;
+	transition: transform 200ms ease-in-out;
+}
+
+.burgerLine {
+	width: 100%;
+	height: 15px;
+	background-color: red;
+}
+
+/*offsets menu items from right side. Changes as it becomes responsive.*/
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.colour {
+	background-color: red;
+}
+
+.b1,
+.b2,
+.b3 {
+	transition: transform 200ms ease-in-out;
+}
+
+.change .b1 {
+	transform: rotate(-45deg) translate(-12px, 10px);
+	width: 50px;
+
+}
+
+.change .b2 {
+	opacity: 0;
+
+}
+
+.change .b3 {
+	transform: rotate(45deg) translate(-12px, -10px);
+	width: 50px;
+
+}
+
+#header {
+	position: absolute;
+	width: 600px;
+	height: 250px;
+	top: 50%;
+	left: 10%;
+	margin-top: -125px;
+	color: rgb(240, 240, 240);
+	/*	border: 1px solid yellow*/
+}
+
+#mainHeader {
+	margin: 15px 20px 15px 20px
+}
+
+#mainHeader h1 {
+	font-size: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+.intro {
+	margin: 20px 20px 0px 20px;
+}
+
+.subHeader {
+	margin: 15px 20px;
+}
+
+.subHeader h2 {
+	font-weight: 400;
+}
+
+#button {
+	border-radius: 25px;
+	border: none;
+	color: white;
+	width: 200px;
+	height: 45px;
+	text-align: center;
+	font-size: 16px;
+	margin-left: 20px;
+	font-family: 'Poppins', sans-serif;
+	transition: all .2s ease-in-out;
+	background-color: rgba(255, 0, 0, 1);
+	/*	add css transitions for hover effect*/
+}
+
+#button:hover {
+	border: 1px solid rgb(240, 240, 240);
+	background-color: rgba(255, 0, 0, 0);
+	cursor: pointer;
+}
+
+.scrolled {
+	background-color: #fff;
+	transition: background-color 200ms linear;
+}
+
+#topDishes {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+#subheading {
+	/*header of top dishes*/
+	margin: 50px auto;
+	text-align: center;
+}
+
+#subheading h1 {
+	font-size: 2.5rem;
+}
+
+#subheading h2 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+/*Phones*/
+@media only screen and (max-width:500px) and (min-width:0px) {
+
+	#listContainer {
+		position: absolute;
+		left: 0;
+		background-color: black;
+		opacity: 0.9;
+		height: 100%;
+		width: 300px;
+		z-index: 100;
+		display: none;
+		background-color: none;
+	}
+
+	.menuItem {
+		display: block;
+		width: 200px;
+		height: 40px;
+		margin: 0px auto;
+		background-color: none;
+		color: rgb(240, 240, 240);
+	}
+
+	.menuItem:last-of-type {
+		margin: 0px auto;
+	}
+
+	.menuItem:first-of-type {
+		margin: 60px auto 0px auto;
+	}
+
+	#burger {
+		display: inline-flex;
+		/*		vertical centering*/
+		margin: 10px 10px;
+		border: none;
+	}
+
+	.burgerLine {
+		height: 10px;
+	}
+
+	.logo {
+		left: 5px;
+	}
+
+	#header {
+		width: 80%;
+		top: 350px;
+		left: 5px;
+	}
+}
