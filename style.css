@@ -229,6 +229,10 @@
 
 /*Phones*/
 @media only screen and (max-width:500px) and (min-width:0px) {
+	#navbar {
+		height: 100%;
+		background-color: rgba(240, 240, 240, 0)
+	}
 
 	#listContainer {
 		position: absolute;
@@ -276,7 +280,7 @@
 
 	#header {
 		width: 80%;
-		top: 350px;
+		top: 250px;
 		left: 5px;
 	}
 }
