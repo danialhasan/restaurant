@@ -234,6 +234,10 @@
 		background-color: rgba(240, 240, 240, 0)
 	}
 
+	#burger {
+		position: fixed
+	}
+
 	#listContainer {
 		position: absolute;
 		left: 0;
