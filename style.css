@@ -47,8 +47,15 @@
 	flex-grow: 1;
 	flex-shrink: 2;
 	z-index: 10;
-	color: rgb(240, 240, 240);
+}
+
+.navbar-normal {
 	background-color: rgb(240, 240, 240);
+}
+
+.scrolled {
+	background-color: rgba(20, 20, 20, 1);
+	transition: background-color 200ms linear;
 }
 
 #listContainer {
@@ -281,6 +288,7 @@
 	text-transform: uppercase;
 	/*	margin-bottom:20px;*/
 }
+
 
 /*
 #dishes-subtext span h2{
