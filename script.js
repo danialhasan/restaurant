@@ -16,3 +16,7 @@ burger.addEventListener("click", function () {
 function animateMenuBar(x) {
 	x.classList.toggle("change");
 }
+
+var subheading = document.getElementById("subheading");
+var info = subheading.getBoundingClientRect();
+var width = info.width;
