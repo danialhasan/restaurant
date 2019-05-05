@@ -319,8 +319,8 @@
 	}
 
 	#navbar {
-		height: 100%;
-		background-color: rgba(240, 240, 240, 0)
+		/*		height:100%;*/
+		background-color: rgba(20, 20, 20, 0.5)
 	}
 
 	#listContainer {
@@ -328,7 +328,8 @@
 		left: 0;
 		background-color: black;
 		opacity: 0.9;
-		height: 100%;
+		height: 100vh;
+		/*		setting height of listContainer to 100% will not work, because it sets the height to the full height of the parent element, #navbar which is roughly 50px.*/
 		width: 300px;
 		z-index: 100;
 		display: none;

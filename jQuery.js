@@ -6,7 +6,7 @@ $(document).ready(function () {
 			$("#navbar").css("transition", "background-color 200ms linear");
 			$(".menuItem").css("color", "rgb(240, 240, 240)")
 		} else {
-			$("#navbar").css("background", "rgb(240, 240, 240)");
+			$("#navbar").css("background", "rgba(240, 240, 240, 0)");
 			$(".menuItem").css("color", "rgb(20, 20, 20)")
 		}
 	})
