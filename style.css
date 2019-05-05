@@ -240,7 +240,7 @@
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-content: center;
-	width: 1300px;
+	width: 90%;
 	height: 400px;
 	/*	border: 5px solid red;*/
 	margin: 0px auto;
@@ -249,15 +249,13 @@
 #dishes-child {
 	width: 400px;
 	height: 100%;
-	/*	border: 1px solid black;*/
+	border: 1px solid black;
 }
 
-#dishes-image {
-	height: 250px;
-}
 
 #dishes-image {
 	background-size: cover;
+	height: 250px;
 }
 
 .dish-image-1 {
@@ -301,8 +299,25 @@
 	margin:10px 0px;
 }
 */
+/*for the top dishes section*/
+@media only screen and (max-width:1350px) and (min-width:0px) {
+	#topDishesContainer {
+		height: 80%;
+		width: 90%;
+	}
+
+	#dishes-child {
+		height: 400px;
+	}
+}
+
 /*Phones*/
 @media only screen and (max-width:500px) and (min-width:0px) {
+	#topDishesContainer {
+		width: 100%;
+		height: 1200px;
+	}
+
 	#navbar {
 		height: 100%;
 		background-color: rgba(240, 240, 240, 0)
