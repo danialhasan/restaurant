@@ -386,6 +386,10 @@
         left: 5px;
     }
 
+    #topDishesContainer {
+        width: 100%;
+    }
+
     #dishes-child:nth-child(1) {
         margin-bottom: 10px;
     }
@@ -393,9 +397,24 @@
     #dishes-child {
         margin: 10px 0px 10px 0px;
         height: auto;
+        width: 100%;
     }
 
     #dishes-subtext {
         margin-left: 10px;
+    }
+
+    #dishes-subtext h2:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    #dishes-subtext h2:nth-child(2) {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:320px) and (min-width:0px) {
+    #dishes-child {
+        height: 450px;
     }
 }
