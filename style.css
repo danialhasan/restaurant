@@ -332,8 +332,7 @@
 
     #subheading {
         width: 100%;
-        margin-bottom: 200px;
-        /*this looks weird on chrome, but on iPhone it looks how its supposed to look.*/
+        /*        margin-bottom: 200px; */
     }
 
     #navbar {
