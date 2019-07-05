@@ -71,10 +71,12 @@
     align-items: center;
     margin: 0 10px;
     color: rgb(240, 240, 240);
+    /*    transition: color;*/
 }
 
-.menuItem:hover {
-    cursor: pointer
+.menuItem:hover h2 {
+    cursor: pointer;
+    color: rgb(235, 50, 35);
 }
 
 .menuItem h2 {
@@ -302,6 +304,9 @@
     /*	margin-bottom:20px;*/
 }
 
+#dishes-child:hover #dishes-subtext span {
+    color: rgb(235, 50, 35);
+}
 
 /*
 #dishes-subtext span h2{
@@ -347,10 +352,6 @@
 
     #dishes-subtext {
         text-align: center;
-    }
-
-    #dishes-image:hover {
-        border: 10px solid red
     }
 }
 
