@@ -228,10 +228,13 @@
     margin: 70px auto 70px auto;
     text-align: center;
     width: 430px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 #subheading h1 {
     font-size: 2.5rem;
+    font-weight: 600;
 }
 
 #subheading h2 {
@@ -297,6 +300,10 @@
     font-weight: normal;
 }
 
+#dishes-subtext span {
+    transition: color 0.2s;
+}
+
 #dishes-subtext span h2 {
     font-size: 25px;
     font-weight: 600;
@@ -319,6 +326,116 @@
 	margin:10px 0px;
 }
 */
+#featuredFoodContainer {
+    position: absolute;
+    top: 200%;
+    width: 100vw;
+    height: 100vh;
+    /*    border: 10px solid red;*/
+}
+
+#carousel {
+    width: 1200px;
+    height: 400px;
+    margin: 0px auto;
+    border: 1px solid blue;
+}
+
+#carouselImageContainer {
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+#carouselImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background-size: contain;
+}
+
+#textContainer {
+    float: left;
+    height: 100%;
+    width: 50%;
+    border: 1px solid blue;
+}
+
+#textContainer h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin: 90px 0px 0px 40px;
+}
+
+#textContainer h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: rgb(67, 67, 67);
+    font-style: italic;
+    margin: 20px 0px 0px 40px;
+
+}
+
+#textContainer button {
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    transition: all .2s ease-in-out;
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+    margin: 20px 0px 0px 40px;
+}
+
+#textContainer button:hover {
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0);
+    color: red;
+    cursor: pointer;
+}
+
+#carouselControlsContainer {
+    /*    position: absolute;*/
+    width: 200px;
+    height: 50px;
+    /*    border: 1px solid green;*/
+    background-color: red;
+    border-radius: 25px;
+    margin: 0px auto;
+}
+
+#previous,
+#next {
+    width: 50%;
+    height: 100%;
+    border-radius: 25px;
+
+    /*    background-color: red;*/
+    /*    border: 1px solid blue*/
+}
+
+#previous {
+    float: left;
+    text-align: center;
+}
+
+#next {
+    float: right;
+    text-align: center;
+
+}
+
+#previous img {
+    height: 100%;
+    /*    margin: 0px auto;*/
+}
+
+#next img {
+    height: 100%;
+}
+
 /*for the top dishes section*/
 @media only screen and (max-width:1350px) and (min-width:951px) {
     #topDishesContainer {
