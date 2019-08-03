@@ -38,9 +38,9 @@ window.onload = function () {
             i = 0;
             carouselImage.src = images[i]
         }
-        //        alert(i);
-
     });
+
+    // changed values of 'i' is locked inside the functions
     previousButton.addEventListener("click", function () {
         if (i > 0) {
             i--;
@@ -53,6 +53,14 @@ window.onload = function () {
             //            alert(i);
 
         }
-        subtext.innerHTML = i
     })
 }
+/*
+    #next possibility: add switch cases to match each thing in the images array to a specific type of text inside the text div. 
+    #ie: when i=0, image=image0. Since it is image0, change the text in the 
+    #text div in order to match that image. 
+    
+    #other way: make arrays for each html element that will be changed, with their different values. Make this match 'i'.
+    #example: var subtextInnerHTML = ["biryani", "noodles"];
+    #           subtext.innerHTML = subtextInnerHTML[i];
+*/
