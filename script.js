@@ -25,42 +25,55 @@ var images = [
 var carouselImage = document.getElementById("carouselImage");
 var previousButton = document.getElementById("previous");
 var nextButton = document.getElementById("next");
-var subtext = document.getElementsByClassName("featuredFoodSubtext");
+var subtext = document.getElementById("featuredFoodSubtext");
+var description = document.getElementById("featuredFoodDescription");
+var subtextInnerHTML = [
+    "item0",
+    "item1",
+    "item2",
+    "item3",
+    "item4"
+];
+var descriptionInnerHTML = [
+    "item0",
+    "item1",
+    "item2",
+    "item3",
+    "item4"
+];
 window.onload = function () {
     var i = 0;
     nextButton.addEventListener("click", function () {
         if (i < images.length - 1) {
-            i++
-            carouselImage.src = images[i];
-            subtext.innerHTML = "Hello!"
+            i++;
+            subtext.innerHTML = "Hello!";
 
         } else {
             i = 0;
-            carouselImage.src = images[i]
         }
+        carouselImage.src = images[i];
+        subtext.innerHTML = subtextInnerHTML[i];
+        description.innerHTML = descriptionInnerHTML[i];
     });
 
     // changed values of 'i' is locked inside the functions
     previousButton.addEventListener("click", function () {
         if (i > 0) {
             i--;
-            carouselImage.src = images[i];
             //            alert(i);
 
         } else if (i == 0) {
             i = images.length - 1;
-            carouselImage.src = images[i];
             //            alert(i);
 
         }
+        carouselImage.src = images[i];
+        subtext.innerHTML = subtextInnerHTML[i];
+        description.innerHTML = descriptionInnerHTML[i];
     })
 }
 /*
-    #next possibility: add switch cases to match each thing in the images array to a specific type of text inside the text div. 
-    #ie: when i=0, image=image0. Since it is image0, change the text in the 
-    #text div in order to match that image. 
-    
-    #other way: make arrays for each html element that will be changed, with their different values. Make this match 'i'.
+    #todo: make arrays for each html element that will be changed, with their different values. Make this match 'i'.
     #example: var subtextInnerHTML = ["biryani", "noodles"];
     #           subtext.innerHTML = subtextInnerHTML[i];
 */
